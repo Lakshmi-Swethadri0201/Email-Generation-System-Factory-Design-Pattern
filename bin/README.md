@@ -1,26 +1,3 @@
-Email Generation Application
-
-This email generation application generate email templates per customer type. 
-To implement this project, Factory design pattern is used.
-
--->created an interface called Customer, which has createEmailTemplate method of type Email.
--->Created concrete classes such as Vip,New,Frequent,Returning and BusinessCustomer implementing the same customer interface.
--->Created a Factory to generate object of concrete class based on given information. (customerType)
--->Used the Factory to get object of concrete class by passing an information such as CustomerType.
-
-Customer types can be easily expanded by simply creating more customer type classes that implement the Customer interface.
-The code itself is very straightforward, allowing developers to easily expand on the existing classes and interfaces effortlessly.
-
-The Factory Design Pattern or Factory Method Design Pattern is one of the most used design patterns in Java.
-In this application, object creation is done without exposing the creation logic to the client 
-and refer to newly created object using a common interface, thus avoiding duplicate code as well.
-
-Main class, our demo class will use CustomerFactory to get a Customer object.
-It will pass information (Business / New / Frequent/ Vip/ Returning) to CustomerFactory to get the type of object it needs.
-Based on the type of object created createEmailTemplate is used to create email for specific customer type.
-
-GitRepo: https://github.com/metcs/met-cs665-assignment-3-Lakshmi-Swethadri0201.git
-
 # Project Template
 
 This is a Java Maven Project Template
